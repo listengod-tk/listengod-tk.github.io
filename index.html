@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="preload" href="videos/clip1.mp4" as="video" type="video/mp4">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/h-ibaldo/Raleway_Fixed_Numerals@master/css/rawline.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/listengod.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
+    <!-- Modernizr -->
+    <title>ListenGod</title>
+</head>
+
+<body onload="loadDelay()">
+    <!--Loader-->
+    <section id="loader-section">
+        <div class="loader-background"></div>
+        <div class="loader"></div>
+    </section>
+
+
+    <!--This wrap use to hide web content when the page is loading-->
+    <section style="display: none;" id="hidden-wrapper">
+        <!-- <button class="contact-btn wow pulse infinite">
+            <a href="#contact-section">Listen Now</a>
+            <i class="fa fa-book wow wobble infinite"></i>
+        </button> -->
+        <section id="welcome-section">
+            <!--Background video-->
+            <video playsinline autoplay muted id="video" src="videos/clip1.mp4"></video>
+            <!--overlay class is used for darkening video background and contain welcome content-->
+            <div class="overlay">
+                <i id="logo"> </i>
+                <span class="icon-ListenGod"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+                <div id="welcome-content">
+                    <div class="cd-intro">
+                        <h1 class="cd-headline letters type wow fadeInDown">
+                            <span>Listen</span>
+                            <span class="cd-words-wrapper waiting">
+                                <b class="is-visible">Audio Bible</b>
+                                <b>Gospel Audio Books</b>
+                                <b>Gospel Songs</b>
+                                <b>Bible Stories</b>
+                                <br>
+                            </span>
+                        </h1>
+                        <h1 class="slogan wow fadeInLeft">Let the wise listen and add to their learning, and let the discerning get guidance—</h1>                        
+                        <br>
+                        <h5 class="wow fadeInRight">Proverbs 1:5</h5>
+                    </div>
+                    
+                    <!--Social btn-->
+                    <!-- <div class="social-wrap">
+                        <ul class="social animated flip">
+                            <li class="facebook">
+                                <a href="https://www.facebook.com/Khoateamer">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="github">
+                                <a href="https://github.com/khoateamer">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="medium">
+                                <a href="https://medium.com/@khoateamer">
+                                    <i class="fa fa-medium"></i>
+                                </a>
+                            </li>
+                            <li class="google-plus">
+                                <a href="https://plus.google.com/u/0/104241943615792425950">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="linked-in">
+                                <a href="https://www.linkedin.com/in/khoateamer">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+
+                    <!--Portfolio nav btn-->
+                    <div class="portfolio-btn-wrapper wow rubberBand" data-wow-delay="800ms">
+                        <button class="my-portfolio-btn">
+                            <a href="#portfolio-section">Listen Now</a>
+                        </button>
+                    </div>
+
+                    <!--Mouse scroll animation-->
+                    <span class="scroll-btn wow bounce">
+                        <a href="#">
+                            <span class="mouse">
+                                <span></span>
+                            </span>
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="about-section" class="section">
+            <div class="container about-content">
+                <h1 class="wow fadeInDown about-title" data-wow-delay="100ms">About ListenGod</h1>
+                <p class="wow fadeInLeft about-subtitle" data-wow-delay="100ms">ListenGod is a channel for Christians and Bible lovers.
+                            You can always come and listen to the word of God. 
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div data-tilt class="my-img js-tilt wow flipInY" data-wow-delay="300ms">
+                            <div class="my-img-text-container">
+                                <div class="img-text">
+                                    <h2>Your word is lamp for my feet, a light on my path. </h2>
+                                    <br>
+                                    <br>
+                                    <p> Psalms 119:105</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-wrapper">
+                            <div class="about-detail">
+                                <h1 class="rainbow">FOLLOW US</span>
+                                </h1>
+                                <hr>
+                                <p class="wow fadeInRight" data-wow-delay="300ms">
+                                    <span class="rainbow2">Email:</span> listengod.tk@gmail.com</p>
+                            </div>
+                            <div class="about-social wow fadeInDown">
+                                <a class="fb" href="https://www.facebook.com/ListenGod">
+                                    <i class="fa fa-facebook "></i>
+                                </a>
+                                <a class="twi" href="https://twitter.com/ListenGod1">
+                                    <i class="fa fa-twitter"></i>
+                                    </i>
+                                </a>
+                                <a class="ins" href="https://www.instagram.com/listengod.voice">
+                                    <i class="fa fa-instagram "></i>
+                                </a>
+                                <a class="you" href="https://www.youtube.com/c/ListenGod">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="bigAssImg1"></section>
+
+        <section id="my-skill">
+            <h1 class="wow fadeInDown">KIDS BIBLE STORY</h1>
+            <!--start pie chart-->
+            <br>
+            <br>
+            <div>
+                <iframe width="100%" height="500" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525934449&color=%2300daff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe><div style="font-size: 10px; color: #333333;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vinoth-durairaj" title="Vinoth Durairaj" target="_blank" style="color: #ccb3b3; text-decoration: none;">Listen God</a> · <a href="https://soundcloud.com/vinoth-durairaj/sets/kids-bible-story" title="Kids Bible Story" target="_blank" style="color: #cccccc; text-decoration: none;">Kids Bible Story</a></div>
+            </div>
+        </section>
+        <!--End timline section-->
+        <section id="bigAssImg"></section>
+        <!--Start portfolio section-->
+        <section id="portfolio-section">
+            <h1 class="wow fadeInDown">Listen Now</h1>
+            <div class="container-fluid mb-5">
+                <!--Start fancybox-->
+                <div class="row">
+                    <div class="col-md-4 wow fadeInDown" data-wow-delay="300ms">
+                        <p class="imglist">
+                            <a href="https://anchor.fm/s/cc1bdb0/podcast/rss">
+                                <img class="img-fluid" src="images/TamilBible.jpg" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInDown" data-wow-delay="200ms">
+                        <p class="imglist">
+                            <a href="images/WorkingOnIt.png" data-fancybox="Audio">
+                                <img class="img-fluid" src="images/EnglishBible.jpg" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-4 wow fadeInDown" data-wow-delay="300ms">
+                        <p class="imglist">
+                            <a href="images/WorkingOnIt.png" data-fancybox="images">
+                                <img class="img-fluid" src="images/HindiBible.jpg" />
+                            </a>
+                        </p>
+                    </div>    
+                </div>
+                <!--End fancybox-->
+            </div>
+        </section>
+        <!--End portfolio section-->
+
+        <section id="extraGreeting">
+            <h1 class="wow fadeInDown">
+                <i class="fa fa-american-sign-language-interpreting"></i>
+            </h1>
+            <h1 class="wow fadeInDown">Call For writers</h1>
+            <h2 class="wow fadeInLeft">Dear brother & sister, <br><br> 
+                You may be the writer, jotting down the words of God and releasing it as a paper book.<br><br> 
+                You are blessed with such wonderful writing skill because God has chosen you to express himself as words in and through you. Your words should have reached many readers and should have changed their lives. But, the words that you have written is stopped with an only limited audience of people having reading habits.<br><br> 
+                What about soul that doesn't like to read or don't know to read? <br><br> 
+                I believe, God words that you have written should reach to all people in the world. <br><br> 
+                In this digital world, everyone uses the smart technology, that results in many to habitual of listening to the audiobooks, podcast or reading the e-books and blogs than reading paper books. Hence, ListenGod team decided to use our technical capabilities to convert the paper books as audiobooks or podcast using software such as TTS (text to speech), 
+                artificial intelligence deep learning and voice assistance to deliver your Godly content to a wider audience. <br><br> 
+                All these words are not to find the profit from our work or finding the favoritism from your work. <br><br> 
+                The sole intention is to reach God words to many people and being the reason of changing somebody's life in Christ. If you are a gospel writer, writing or written a free book. You can write email to us down. <i class="fa fa-arrow-down"></i> <br><br> 
+                Your words will be available as a podcast, audiobook through ListenGod in the famous platform of Spotify, SoundCloud, iPhone Podcast, anchor.fm and voice assistance devices like Alexa & Google home for free. <br><br> 
+                If you would like to publish under your own branding, of course, we can talk. </h2>
+        </section>
+
+        <!--Start contact section-->
+        <section id="contact-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-wrapper">
+                        <div class="contact-title">
+                            <h1 class="wow fadeInDown">Get In Touch</h1>
+                            <p class="wow fadeInRight">Contact US !</p>
+                            <p class="wow fadeInLeft">Via
+                                <!-- <strong>Phone:</strong>
+                                <a href="tel:0931891198">(+84) 931-891-198</a> or -->
+                                <strong>Email:</strong>
+                                <a href="mailto:listengod.tk@gmail.com">listengod.tk@gmail.com</a>.</p>
+                        </div>
+                        <!--Start form textfield-->
+                        <form class="contact-form" action="send-email">
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <input class="form form-control wow fadeInLeft" type="text" name="name" placeholder="Name*">
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <input class="form form-control wow fadeInRight" type="email" name="email" placeholder="Email Address*">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input class="form form-control wow fadeInLeft" type="text" name="name" placeholder="Phone Number*">
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form form-control wow fadeInRight" type="email" name="email" placeholder="Detail">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea class="textarea wow flipInX" name="message" id="" cols="30" rows="10" placeholder="Leave a message !"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger wow swing">
+                                <a href="mailto:listengod.tk@gmail.com" class="send-button">Send My Message</a>
+                            </button>
+                            <p class="footer wow zoomIn">@LISTENGOD
+                                <a href="https://listengod.tk">Voice For God Words
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </p>
+                        </form>
+                        <!--End form textfield-->
+                    </div>
+
+                </div>
+            <div class="col-md-6">
+                <section id="support-section" class="section">
+                    <div class="container support-content">
+                        <h1 class="wow fadeInDown support-title" data-wow-delay="100ms">Support ListenGod</h1>
+                        <p class="wow fadeInLeft support-subtitle" data-wow-delay="100ms">Wow! We really appriciated that you scroll this far. 
+                            If you're listening our work and wants to support us with your expertise, knowledge, skill, power and money, 
+                            then write to us <i class="fa fa-arrow-left"></i> 
+                        </p>            
+                    </div>
+                </section>
+                
+                <!-- <br>
+                <br>
+                <h2 class="wow fadeInDown">Wow! We really appriciated that you scroll this far. 
+                                If you're listening our work and support us with your expertise, knowledge, skill, power and money, 
+                                then write to us 
+                </h2>                             -->
+
+                
+                <!-- <section id="extraGreeting">
+                    <h1 class="wow fadeInDown">
+                        <i class="fa fa-american-sign-language-interpreting"></i>
+                    </h1>
+                    <h2 class="wow fadeInDown">Wow! We really appriciated that you scroll this far. 
+                        If you're listening our work and support us with your expertise, knowledge, skill, power and money, 
+                        then write to us <i class="fa fa-arrow-left"></i>
+                    </h2>
+                </section> -->
+                    <!--Map API-->
+                    <!-- <div id="map" class="wow zoomIn" data-wow-delay="700ms">      
+                        <script>
+                            function initMap() {
+                                var khoaHome = {
+                                    lat: 10.689563,
+                                    lng: 106.656945
+                                };
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 4,
+                                    center: khoaHome,
+                                    styles: [{
+                                        "featureType": "administrative",
+                                        "elementType": "labels.text.fill",
+                                        "stylers": [{
+                                            "color": "#444444"
+                                        }]
+                                    }, {
+                                        "featureType": "landscape",
+                                        "stylers": [{
+                                            "color": "#f2f2f2"
+                                        }]
+                                    }, {
+                                        "featureType": "poi",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    }, {
+                                        "featureType": "road",
+                                        "stylers": [{
+                                            "saturation": -100
+                                        }, {
+                                            "lightness": 45
+                                        }]
+                                    }, {
+                                        "featureType": "road.arterial",
+                                        "elementType": "labels.icon",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    }, {
+                                        "featureType": "road.highway",
+                                        "stylers": [{
+                                            "visibility": "simplified"
+                                        }]
+                                    }, {
+                                        "featureType": "transit",
+                                        "stylers": [{
+                                            "visibility": "off"
+                                        }]
+                                    }, {
+                                        "featureType": "water",
+                                        "stylers": [{
+                                            "color": "#323a44"
+                                        }, {
+                                            "visibility": "on"
+                                        }]
+                                    }]
+                                });
+                                var marker = new google.maps.Marker({
+                                    position: khoaHome,
+                                    map: map
+                                });
+                            }
+                        </script>
+                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJRj_PXafeeXr0Ogks05xNbdvh_QXSTdY&callback=initMap">
+                        </script>
+                    </div> 
+                </div> -->
+            </div>
+        </section>
+        <!--End contact section-->
+    </section>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/tilt.jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

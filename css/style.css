@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8vtpye');
+  src:  url('../fonts/icomoon.eot?8vtpye#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8vtpye') format('truetype'),
+    url('../fonts/icomoon.woff?8vtpye') format('woff'),
+    url('../fonts/icomoon.svg?8vtpye#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ListenGod .path1:before {
+  content: "\e900";
+  color: rgb(209, 211, 230);
+}
+.icon-ListenGod .path2:before {
+  content: "\e901";
+  margin-left: -2.2177734375em;
+  color: rgb(21, 151, 217);
+}
+.icon-ListenGod .path3:before {
+  content: "\e902";
+  margin-left: -2.2177734375em;
+  color: rgb(31, 90, 166);
+}
+.icon-ListenGod .path4:before {
+  content: "\e903";
+  margin-left: -2.2177734375em;
+  color: rgb(41, 58, 140);
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-user-tie:before {
+  content: "\e976";
+}
+.icon-accessibility:before {
+  content: "\e9b2";
+}
+.icon-man:before {
+  content: "\e9dc";
+}
+.icon-woman:before {
+  content: "\e9dd";
+}
+.icon-man-woman:before {
+  content: "\e9de";
+}
+.icon-happy:before {
+  content: "\e9df";
+}
+.icon-shocked:before {
+  content: "\e9f1";
+}
+.icon-hipster2:before {
+  content: "\e9fa";
+}
+.icon-wondering:before {
+  content: "\e9fb";
+}
+.icon-point-right:before {
+  content: "\ea04";
+}
+.icon-point-down:before {
+  content: "\ea05";
+}
+.icon-point-left:before {
+  content: "\ea06";
+}
+.icon-volume-high:before {
+  content: "\ea26";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-spotify:before {
+  content: "\ea94";
+}
+.icon-telegram:before {
+  content: "\ea95";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+.icon-twitch:before {
+  content: "\ea9f";
+}
+.icon-vimeo:before {
+  content: "\eaa0";
+}
+.icon-dropbox:before {
+  content: "\eaae";
+}
+.icon-tux:before {
+  content: "\eabd";
+}
+.icon-soundcloud:before {
+  content: "\eac3";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.icon-reddit:before {
+  content: "\eac6";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-safari:before {
+  content: "\eadd";
+}
+.icon-file-word:before {
+  content: "\eae1";
+}
