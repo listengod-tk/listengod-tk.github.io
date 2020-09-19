@@ -1,389 +1,584 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <!-- Required meta tags -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177902467-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-177902467-1');
-    </script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="preload" href="videos/clip1.mp4" as="video" type="video/mp4">
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/h-ibaldo/Raleway_Fixed_Numerals@master/css/rawline.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <!-- CSS reset -->
-    <link rel="stylesheet" href="css/reset.css">
-    <!-- Resource style -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- <link rel="stylesheet" href="css/listengod.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/modernizr.js"></script>
-    <!-- Modernizr -->
-    <title>ListenGod</title>
-</head>
-
-<body onload="loadDelay()">
-    <!--Loader-->
-    <section id="loader-section">
-        <div class="loader-background"></div>
-        <div class="loader"></div>
-    </section>
-
-
-    <!--This wrap use to hide web content when the page is loading-->
-    <section style="display: none;" id="hidden-wrapper">
-        <!-- <button class="contact-btn wow pulse infinite">
-            <a href="#contact-section">Listen Now</a>
-            <i class="fa fa-book wow wobble infinite"></i>
-        </button> -->
-        <section id="welcome-section">
-            <!--Background video-->
-            <video playsinline autoplay muted id="video" src="videos/clip1.mp4"></video>
-            <!--overlay class is used for darkening video background and contain welcome content-->
-            <div class="overlay">
-                <i id="logo"> </i>
-                <span class="icon-ListenGod"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
-                <div id="welcome-content">
-                    <div class="cd-intro">
-                        <h1 class="cd-headline letters type wow fadeInDown">
-                            <span>Listen</span>
-                            <span class="cd-words-wrapper waiting">
-                                <b class="is-visible">Audio Bible</b>
-                                <b>Gospel Audio Books</b>
-                                <b>Gospel Songs</b>
-                                <b>Bible Stories</b>
-                            </span>
-                        </h1>
-                        <br>
-                        <br>
-                        <h1 class="slogan wow fadeInLeft">Let the wise listen and add to their learning, and let the discerning get guidance—</h1>                        
-                        <br>
-                        <h5 class="wow fadeInRight">Proverbs 1:5</h5>
-                    </div>
-                    <br>
-                    <br>
-                    <!--Social btn-->
-                    <!-- <div class="social-wrap">
-                        <ul class="social animated flip">
-                            <li class="facebook">
-                                <a href="https://www.facebook.com/Khoateamer">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="github">
-                                <a href="https://github.com/khoateamer">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                            <li class="medium">
-                                <a href="https://medium.com/@khoateamer">
-                                    <i class="fa fa-medium"></i>
-                                </a>
-                            </li>
-                            <li class="google-plus">
-                                <a href="https://plus.google.com/u/0/104241943615792425950">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="linked-in">
-                                <a href="https://www.linkedin.com/in/khoateamer">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> -->
-
-                    <!--Portfolio nav btn-->
-                    <div class="portfolio-btn-wrapper wow rubberBand" data-wow-delay="800ms">
-                        <button class="my-portfolio-btn">
-                            <a href="#portfolio-section">Listen Now</a>
-                        </button>
-                    </div>
-
-                    <!--Mouse scroll animation-->
-                    <span class="scroll-btn wow bounce">
-                        <a href="#">
-                            <span class="mouse">
-                                <span></span>
-                            </span>
-                        </a>
-                    </span>
-
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ListenGod::Voice For God Words</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="" /></a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Listen</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Resource</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Let the wise listen and add to their learning, and let the discerning get guidance—
+                <br><br>
+                Proverbs 1:5</div>
+                <div class="masthead-heading text-uppercase">So! Listen More</div>
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Listen Now</a>
+            </div>
+        </header>
 
-        </section>
-        <section id="about-section" class="section">
-            <div class="container about-content">
-                <h1 class="wow fadeInDown about-title" data-wow-delay="100ms">About ListenGod</h1>
-                <p class="wow fadeInLeft about-subtitle" data-wow-delay="100ms">ListenGod is a platform for Christians and Bible lovers.
-                            You can always come and listen to the word of God. Our motive is to reach the word of God to the people through various interfaces. 
-                </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div data-tilt class="my-img js-tilt wow flipInY" data-wow-delay="300ms">
-                            <div class="my-img-text-container">
-                                <div class="img-text">
-                                    <h2>Your word is lamp for my feet, a light on my path. </h2>
-                                    <br>
-                                    <br>
-                                    <p> Psalms 119:105</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="detail-wrapper">
-                            <div class="about-detail">
-                                <h1 class="rainbow">FOLLOW US</span>
-                                </h1>
-                                <hr>
-                                <p class="wow fadeInRight" data-wow-delay="300ms">
-                                    <span class="rainbow2">Email:</span> listengod.org@gmail.com
-                                    <br>
-                                    <br>
-                                    <span class="rainbow2">Available On:</span> Web player <i class="fa fa-play-circle-o"></i>, Android <i class="fa fa-android" aria-hidden="true"></i>, Apple <i class="fa fa-apple" aria-hidden="true"></i>.
-                                    <br>
-                                    <br>
-                                    <span class="rainbow2">Listen Through Voice assistance :</span> <i>“Alexa, open tamil bible”</i> 
-                                    </a> </p>
-                            </div>
-                            <div class="about-social wow fadeInDown">
-                                <a class="fb" href="https://www.facebook.com/ListenGod">
-                                    <i class="fa fa-facebook "></i>
-                                </a>
-                                <a class="twi" href="https://twitter.com/ListenGod1">
-                                    <i class="fa fa-twitter"></i>
-                                    </i>
-                                </a>
-                                <a class="ins" href="https://www.instagram.com/listengod.voice">
-                                    <i class="fa fa-instagram "></i>
-                                </a>
-                                <a class="you" href="https://www.youtube.com/c/ListenGod">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Listen</h2>
+                    <h3 class="section-subheading text-muted">The way you read Holy Bible in your first or global language.</h3>
                 </div>
-
-            </div>
-        </section>
-
-        <section id="bigAssImg1"></section>
-
-        <section id="my-skill">
-            <h1 class="wow fadeInDown">KIDS BIBLE STORY</h1>
-            <!--start pie chart-->
-            <br>
-            <br>
-            <div>
-                <iframe width="100%" height="500" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525934449&color=%2300daff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe><div style="font-size: 10px; color: #333333;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vinoth-durairaj" title="Vinoth Durairaj" target="_blank" style="color: #ccb3b3; text-decoration: none;">Listen God</a> · <a href="https://soundcloud.com/vinoth-durairaj/sets/kids-bible-story" title="Kids Bible Story" target="_blank" style="color: #cccccc; text-decoration: none;">Kids Bible Story</a></div>
-            </div>
-        </section>
-        <!--End timline section-->
-        <section id="bigAssImg"></section>
-        <!--Start portfolio section-->
-        <section id="portfolio-section">
-            <h1 class="wow fadeInDown">Listen Now</h1>
-            <div class="container-fluid mb-5">
-                <!--Start fancybox-->
                 <div class="row">
                     <div class="col-md-4 wow fadeInDown" data-wow-delay="300ms">
                         <p class="imglist">
-                            <a href="https://anchor.fm/listengod">
-                                <img class="img-fluid" src="images/TamilBible.jpg" />
+                            <a href="https://anchor.fm/listengod" target="_blank">
+                                <img class="img-fluid" src="assets/img/TamilBible.jpg" />
                             </a>
                         </p>
                     </div>
                     <div class="col-md-4 wow fadeInDown" data-wow-delay="200ms">
                         <p class="imglist">
-                            <a href="images/WorkingOnIt.png" data-fancybox="Audio">
-                                <img class="img-fluid" src="images/EnglishBible.jpg" />
+                            <a href="https://anchor.fm/listengodhindi" target="_blank">
+                                <img class="img-fluid" src="assets/img/HindiBible.jpg" />
                             </a>
                         </p>
                     </div>
                     <div class="col-md-4 wow fadeInDown" data-wow-delay="300ms">
                         <p class="imglist">
-                            <a href="images/WorkingOnIt.png" data-fancybox="images">
-                                <img class="img-fluid" src="images/HindiBible.jpg" />
+                            <a href="assets/img/WorkingOnIt.png" data-fancybox="images">
+                                <img class="img-fluid" src="assets/img/EnglishBible.jpg" />
                             </a>
                         </p>
                     </div>    
                 </div>
-                <!--End fancybox-->
             </div>
         </section>
-        <!--End portfolio section-->
-
-        <section id="extraGreeting">
-            <h1 class="wow fadeInDown">
-                <i class="fa fa-american-sign-language-interpreting"></i>
-            </h1>
-            <h1 class="wow fadeInDown">Call For writers</h1>
-            <br>
-            <h2 class="wow fadeInLeft">Dear brother & sister, <br><br> 
-                You may be the writer, jotting down the words of God and releasing it as a paper book.<br><br> 
-                You are blessed with such wonderful writing skill because God has chosen you to express himself as words in and through you. Your words should have reached many readers and should have changed their lives. But, the words that you have written is stopped with an only limited audience of people having reading habits.<br><br> 
-                What about soul that doesn't like to read or don't know to read? <br><br> 
-                I believe, God words that you have written should reach to all people in the world. <br><br> 
-                In this digital world, everyone uses the smart technology, that results in many to habitual of listening to the audiobooks, podcast or reading the e-books and blogs than reading paper books. Hence, ListenGod team decided to use our technical capabilities to convert the paper books as audiobooks or podcast using software such as TTS (text to speech), 
-                artificial intelligence deep learning and voice assistance to deliver your Godly content to a wider audience. <br><br> 
-                All these words are not to find the profit from our work or finding the favoritism from your work. <br><br> 
-                The sole intention is to reach God words to many people and being the reason of changing somebody's life in Christ. If you are a gospel writer, writing or written a free book. You can write email to us down. <i class="fa fa-arrow-down"></i> <br><br> 
-                Your words will be available as a podcast, audiobook through ListenGod in the famous platform of Spotify, SoundCloud, iPhone Podcast, anchor.fm and voice assistance devices like Alexa & Google home for free. <br><br> 
-                If you would like to publish under your own branding, of course, we can talk. </h2>
-        </section>
-
-        <!--Start contact section-->
-        <section id="contact-section">
-            <div class="row">                
-            <div class="col-md-6">
-                <section id="support-section" class="section">
-                    <div class="container support-content">
-                        <h1 class="wow fadeInDown support-title" data-wow-delay="100ms">Support ListenGod</h1>
-                        <p class="wow fadeInLeft support-subtitle" data-wow-delay="100ms">Wow! We really appriciated that you scroll this far. 
-                            If you're listening our work and wants to support us with your expertise, knowledge, skill, power and money, 
-                            then write to us <i class="fa fa-arrow-right"></i> 
-                        </p>            
-                    </div>
-                </section>
-                
-                <!-- <br>
-                <br>
-                <h2 class="wow fadeInDown">Wow! We really appriciated that you scroll this far. 
-                                If you're listening our work and support us with your expertise, knowledge, skill, power and money, 
-                                then write to us 
-                </h2>                             -->
-
-                
-                <!-- <section id="extraGreeting">
-                    <h1 class="wow fadeInDown">
-                        <i class="fa fa-american-sign-language-interpreting"></i>
-                    </h1>
-                    <h2 class="wow fadeInDown">Wow! We really appriciated that you scroll this far. 
-                        If you're listening our work and support us with your expertise, knowledge, skill, power and money, 
-                        then write to us <i class="fa fa-arrow-left"></i>
-                    </h2>
-                </section> -->
-                    <!--Map API-->
-                    <!-- <div id="map" class="wow zoomIn" data-wow-delay="700ms">      
-                        <script>
-                            function initMap() {
-                                var khoaHome = {
-                                    lat: 10.689563,
-                                    lng: 106.656945
-                                };
-                                var map = new google.maps.Map(document.getElementById('map'), {
-                                    zoom: 4,
-                                    center: khoaHome,
-                                    styles: [{
-                                        "featureType": "administrative",
-                                        "elementType": "labels.text.fill",
-                                        "stylers": [{
-                                            "color": "#444444"
-                                        }]
-                                    }, {
-                                        "featureType": "landscape",
-                                        "stylers": [{
-                                            "color": "#f2f2f2"
-                                        }]
-                                    }, {
-                                        "featureType": "poi",
-                                        "stylers": [{
-                                            "visibility": "off"
-                                        }]
-                                    }, {
-                                        "featureType": "road",
-                                        "stylers": [{
-                                            "saturation": -100
-                                        }, {
-                                            "lightness": 45
-                                        }]
-                                    }, {
-                                        "featureType": "road.arterial",
-                                        "elementType": "labels.icon",
-                                        "stylers": [{
-                                            "visibility": "off"
-                                        }]
-                                    }, {
-                                        "featureType": "road.highway",
-                                        "stylers": [{
-                                            "visibility": "simplified"
-                                        }]
-                                    }, {
-                                        "featureType": "transit",
-                                        "stylers": [{
-                                            "visibility": "off"
-                                        }]
-                                    }, {
-                                        "featureType": "water",
-                                        "stylers": [{
-                                            "color": "#323a44"
-                                        }, {
-                                            "visibility": "on"
-                                        }]
-                                    }]
-                                });
-                                var marker = new google.maps.Marker({
-                                    position: khoaHome,
-                                    map: map
-                                });
-                            }
-                        </script>
-                        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJRj_PXafeeXr0Ogks05xNbdvh_QXSTdY&callback=initMap">
-                        </script>
-                    </div> 
-                </div> -->
-            </div>
-            <div class="col-md-6">
-               <!-- <div class="form-wrapper"> -->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfQEZT5nbqEVTNok1DmbqQuRQiEWrH2Kz3Vx62cy17T-Bcmw/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                <br>        
-                <p class="footer wow zoomIn">@LISTENGOD
-                            <a href="https://www.listengod.org/">Voice For God Words
-                                
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Resource</h2>
+                    <h3 class="section-subheading text-muted">We like to do more for the sake of Christ, So come and listen the word of God.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/01-thumbnail.jpg" alt="" />
                             </a>
-                        </p>
-                    </form>
-                    <!--End form textfield-->
-                <!-- </div> -->
-
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Kids Bible Story</div>
+                                <div class="portfolio-caption-subheading text-muted">Imagination</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/02-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Gospel Audio Books</div>
+                                <div class="portfolio-caption-subheading text-muted">Philosophy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/03-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Gospel Songs</div>
+                                <div class="portfolio-caption-subheading text-muted">harmonize</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/04-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Lines</div>
+                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/05-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Southwest</div>
+                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/06-thumbnail.jpg" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Window</div>
+                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
             </div>
         </section>
-        <!--End contact section-->
-    </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Who we are and what we have for you!.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>2009-2011</h4> -->
+                                <h4 class="subheading">Why ListenGod</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">ListenGod is a platform for Christians and Bible lovers. You can always come and listen to the word of God. Our motive is to reach the word of God to the people through various interfaces. </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="https://d12xoj7p9moygp.cloudfront.net/favicon/mstile-310x310.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>March 2011</h4> -->
+                                <h4 class="subheading">Many platforms</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We are available on so many platforms and all are become possible through <a href="https://anchor.fm/" target="_blank">anchor.fm</a> a platform to broadcast your audio.
 
-    <!-- Optional JavaScript -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/tilt.jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
+                                Listen the Bible with any of <a href="https://anchor.fm/listengod" target="_blank">Tamil</a>, <a href="https://anchor.fm/listengodhindi" target="_blank">Hindi</a> and <a href="https://anchor.fm/listengodenglish" target="_blank">English</a> languages.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpeg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>December 2012</h4> -->
+                                <h4 class="subheading">Listen God platform</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted"><a href="https://global.listengod.org/" target="_blank">Listengod</a> platform build as dedicated audible or spotify like platform for anyone to register and listen the word of God. Our registration process is very simple, and we strictly ensure not to collect user data as we use <a href="http://ampache.org/" target="_blank">ampache</a> a opensource platform.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>July 2014</h4> -->
+                                <h4 class="subheading">Voice platform</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">
+                                We thought mobile app would really helps but as the technologies grows with different interface. We decided to choose VUI (voice user interface) such as Alexa and Google home. Currently, our tamil bible is available on Alexa. Please download Alexa android or IOS app in your mobile and just say <i>Alexa, open tamil bible.</i> We are still working to get more on VUI.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Be Part
+                                <br />
+                                Of Our
+                                <br />
+                                Team!
+                            </h4>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <!-- <h4>July 2014</h4> -->
+                                <h4 class="subheading">Follow Us</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">
+                                Please write to us at: <i>listengod.org@gmail.com</i>.</p></div>
+                                <br>
+                                <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/ListenGod1"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/ListenGod"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/listengod.voice"><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/c/ListenGod"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <
+        <!-- Team-->
+        <!-- <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Join Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
+                            <h4>Kay Garland</h4>
+                            <p class="text-muted">Lead Designer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
+                            <h4>Larry Parker</h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
+                            <h4>Diana Petersen</h4>
+                            <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                </div>
+            </div> -->
+        </section> -->
+        <!-- Partners-->
+        <!-- <div class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/envato.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/designmodo.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/themeforest.jpg" alt="" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid d-block mx-auto" src="assets/img/logos/creative-market.jpg" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Wow! We really appriciated that you scroll this far. If you're listening our work and support us with your expertise, knowledge, skill, power and Gratitude, then fill this form.</h3>
+                </div>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfQEZT5nbqEVTNok1DmbqQuRQiEWrH2Kz3Vx62cy17T-Bcmw/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div id="success"></div>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
+                    </div>
+                </form> -->
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-left">Copyright © www.listengod.org 2020</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/ListenGod1"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/ListenGod"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.youtube.com/c/ListenGod"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-right">
+                        <a class="mr-3" href="#!">Privacy Policy</a>
+                        <a href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Kids Bible Story</h2>
+                                    <p class="item-intro text-muted">“Let the little children come to me, and do not hinder them, for the kingdom of God belongs to such as these. Truly I tell you, anyone who will not receive the kingdom of God like a little child will never enter it. -Luke 18:15-17”</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/Selection_005.png" alt="" />
+                                    <ul class="list-inline">
+                                        <p align="justify"> Children are one of the largest new user groups of mobile technology. The need has never been greater to understand how these technologies are being designed and to evaluate their impact on children. 
+                                            The technology for children is good in terms of education and learning which improves their visualization. 
+                                            <br><br>
+                                            However, what about the imagination that grows only when we read and listen. 
+                                            That's why we have created an audio bible story for them to decorate their imagination.
+                                        </p>
+                                    </ul>
+                                    <iframe width="100%" height="500" scrolling="no" frameborder="yes" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525934449&color=%2300daff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=false"></iframe><div style="font-size: 10px; color: #333333;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vinoth-durairaj" title="Vinoth Durairaj" target="_blank" style="color: #ccb3b3; text-decoration: none;">Listen God</a> · <a href="https://soundcloud.com/vinoth-durairaj/sets/kids-bible-story" title="Kids Bible Story" target="_blank" style="color: #cccccc; text-decoration: none;">Kids Bible Story</a></div>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Gospel Audio Books</h2>
+                                    <p class="item-intro text-muted">My heart is stirred by a noble theme as I recite my verses for the king; my tongue is the pen of a skillful writer. - Psalm 45:1</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/02-full.jpg" alt="" />
+                                    <p align="justify">As the verse describes, there are blessed writers whom God has chosen to express himself as words in and through them. The words might have reached many readers and changed their lives. But, the words that are written by them is stopped with an only limited audience of people having reading habits.
+                                        <br><br>
+                                        What about soul that doesn't like to read or don't know to read?
+                                        <br><br>
+                                        We Believe, God words that have written by them should reach to all people in the world.
+                                        <br><br>
+                                        That's why ListenGod team decided to use our technical capabilities to convert the paper books as audio books or podcast using software such as TTS (text to speech), artificial intelligence, deep learning and voice assistance to deliver the Godly content to a wider audience.                                        
+                                        <br><br>
+                                        So! Register and login to our ListenGod platform and experience word of God from different perspective.</p>
+                                    <!-- <ul class="list-inline">
+                                        <li href="https://anchor.fm/listengod">Enter Tamil audio platform:</li>
+                                        <li href="https://anchor.fm/listengod">Enter Hindi audio platform:</li>
+                                        <li href="https://anchor.fm/listengod">Enter universal language audio platform:</li>
+                                    </ul> -->
+                                    <br>
+                                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="https://global.listengod.org" target="_blank">Listen Now</a>
+                                    <!-- <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Gospel Songs</h2>
+                                    <p class="item-intro text-muted">He put a new song in my mouth, a hymn of praise to our God.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/03-full.png" alt="" />
+                                    <p align="justify">There are plenty of platforms available out there and those are filled with hymn of praise to our God by artiest whose mouth filled with songs by our Lord.
+                                        <br><br>
+                                        It is good! , but we felt that the gospel songs that are available in common platform may distract the listener as it is written in the scripture Matthew 13:7 "Other seed fell among thorns, which grew up and choked the plants. -".
+                                        <br><br>
+                                        
+                                        Hence, ListenGod team decided to build the static Website that curl across the YouTube channels and bring you the quality HD Gospel songs in MP3 format without scarifying the YouTube copyright by following this  <a href="https://www.labnol.org/internet/youtube-audio-player/26740/" target="_blank">simple techniques</a>. </p>
+                                    <!-- <ul class="list-inline">
+                                        <li>Date: January 2020</li>
+                                        <li>Client: Finish</li>
+                                        <li>Category: Identity</li>
+                                    </ul> -->
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Work In Progress...
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/04-full.jpg" alt="" />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: January 2020</li>
+                                        <li>Client: Lines</li>
+                                        <li>Category: Branding</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/05-full.jpg" alt="" />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: January 2020</li>
+                                        <li>Client: Southwest</li>
+                                        <li>Category: Website Design</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/06-full.jpg" alt="" />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>Date: January 2020</li>
+                                        <li>Client: Window</li>
+                                        <li>Category: Photography</li>
+                                    </ul>
+                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                        <i class="fas fa-times mr-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
